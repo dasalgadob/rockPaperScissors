@@ -11,7 +11,7 @@ class GamesController < ApplicationController
     puts @server_move
     if @user_move == @server_move
       @result = "tie"
-    elsif (@user_move == 'rock' &&  @server_move == 'scissors') || (@user_move == 'paper' &&  @server_move == 'rock') || (@user_move == 'scissors' &&  @server_move == 'rock')
+    elsif (@user_move == 'rock' &&  @server_move == 'scissors') || (@user_move == 'paper' &&  @server_move == 'rock') || (@user_move == 'scissors' &&  @server_move == 'paper')
       @result = "win"
     else
       @result = "lose"
